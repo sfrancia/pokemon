@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="body" [fullscreen]="true">
+  <ion-card id="tarjeta">
+    <form [formGroup]="formLogin">
+      <ion-item>
+        <!-- recordar que es el nombre que tuviera en el .ts -->
+        <ion-input formControlName="email" placeholder="intruduce el mail" type="email" autocorrect="on" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <!-- recordar que es el nombre que tuviera en el .ts -->
+        <ion-input formControlName="password" placeholder="contraseña" name="pass" type="password" ></ion-input>
+      </ion-item>
+    </form>
+    <!--<div class="recordarInfo">
+      <p>Recordar</p>
+      <ion-checkbox mode="ios"></ion-checkbox>
+    </div>-->
+    <ion-button class="botonAcceder" (click)="login()">Acceder</ion-button>
+  </ion-card>
+</ion-content>

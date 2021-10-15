@@ -1,0 +1,7 @@
+{
+  "name": "ejerciciofinal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
